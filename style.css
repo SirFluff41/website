@@ -39,3 +39,11 @@ a:hover {
   flex-direction: column;
   padding: 0em 1em;
 }
+
+.links {
+  background: #FFFFFFAA;
+  height: auto;
+  width: 300px;
+  padding: 0px 15px;  
+  border-radius: 10px;
+}
