@@ -4,6 +4,15 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-size: 36pt;
   text-align: center;
@@ -15,9 +24,10 @@ h1 {
   color: black;
 }
 
-.links {
-  height: 4em;
-  line-height: 4em;
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .link {
@@ -47,39 +57,45 @@ a:hover {
 }
 
 .links {
-  background: #FFFFFFAA;
+  display: flex;
+  flex-direction: column;
   height: auto;
   width: 300px;
+  margin: 20px;
+}
+
+.linksText {
+  background: #FFFFFFAA;
   padding: 0px 15px;  
   border-radius: 15px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 20px;
-  margin-top: 20px;
 }
 
 .WhoamI {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
   font-size: 25pt;
   text-align: center;
   height: auto;
-  width: 850px;
   padding: 10px 15px;  
   border-radius: 15px;
   color: black;
 }
 
+.WhoamIText {
+  max-width: 1000px;
+}
+
 .Alles {
+  margin: 0.5em;
   position: relative;
   display: flex;
+  align-self: center;
   flex-direction: row;
-  justify-content: center;
   background: #FFFFFFAA;
   height: 111em;
-  width: 2500px;
-  padding: 10px 15px;  
+  width: 95vw;
   border-radius: 15px;
   text-align: center;
 }
