@@ -9,7 +9,7 @@ h1 {
   text-align: center;
   background: #FFFFFFAA;
   height: auto;
-  width: 350px;
+  width: 500px;
   padding: 10px 15px;  
   border-radius: 15px;
   align: center;
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .glitch {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
