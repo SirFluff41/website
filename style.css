@@ -189,3 +189,61 @@ a:hover {
     0.025em .05em 0 rgba(0,0,255,.75);
   }
 }
+
+.hover {
+  display: inline-block;
+  position: relative;
+}
+
+.hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#vid {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.button {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 32px;
+  border-radius: 10px;
+  border-color: aqua;
+}
+.button:hover {
+
+}
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+video::-webkit-media-controls-play-button {}
+video::-webkit-media-controls-timeline {}
+video::-webkit-media-controls-current-time-display{}
+video::-webkit-media-controls-time-remaining-display {}
+video::-webkit-media-controls-mute-button {}
+video::-webkit-media-controls-toggle-closed-captions-button {}
+video::-webkit-media-controls-volume-slider {}
